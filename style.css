@@ -1,0 +1,130 @@
+.wrapper {
+    text-align: center;
+}
+.linkedlist {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: darkorange;
+    border-bottom: 10px solid white;
+    margin: auto;
+}
+.tabletask {
+    order: 1
+}
+.tabletask table {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    text-align: center;
+    border: 1px solid grey;
+}
+.tabletask th {
+    font-weight: normal;    
+    color: rgb(248, 0, 0);
+    padding: 5px 5px;
+    font-size: 8px;
+}
+.tabletask td {
+    color: deepskyblue;
+    padding: 5px 5px;
+    font-size: 8px;
+}
+.tabletask caption {
+    font-size: 20px;
+    text-decoration-color: orchid;
+}
+.tabletask tr:nth-child(even) {background: #e8edff;}
+img {
+    max-width: 90%;
+    height: auto;
+}
+header {
+    text-align: center;
+    letter-spacing: 1px;
+    background: white;
+    color: black;
+}
+.logo {
+    width: 55px;
+    float: left;
+    margin-bottom: 0px;
+    text-align: left;
+}
+h1 {
+    text-align: right;
+    font-size: 25px;
+    color: rgb(17, 0, 255);
+}
+a {
+    text-decoration: none;
+}
+.smt {
+    margin: auto;
+    text-align: left;
+    max-width: 960px;
+}
+.menu {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+    text-align: left; 
+    max-width: 100%;
+    background-color: aqua;
+    border-bottom: 20px solid white;
+}
+.menu a {
+    color: fuchsia;
+    border-right: 10px;
+}
+.content {
+    display: flex;
+    flex-flow: nowrap column;
+    max-width: 100%;
+    text-align: center;
+    margin: auto;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    border-top: 10px solid white;
+    background-color: rgb(18, 176, 224);
+    color: white;
+}
+footer {
+    font-size: 20px;
+    background-color: azure;
+}
+
+@media (min-width: 768px) {
+    .tabletask {
+        max-width: 960px;
+        order: 0;
+    }
+    .tabletask th {
+        font-size: medium;
+    }
+    .tabletask td {
+        font-size: medium;
+    }
+    .menu {
+        flex-direction: row;
+        max-width: 960px;
+    }
+    img {
+        max-width: 900px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 50px;
+    }
+    .content {
+        max-width: 960px;
+    }
+    .logo {
+    width: 120px;
+    float: left;
+    margin-bottom: 0px;
+    text-align: left;
+    }
+}

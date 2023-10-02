@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание 3</title>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+<body>
+        <div class="wrapper">
+        <header>
+            <div class="smt">
+                <a href=""><img src="logo1.png" class="logo" alt="Логотип"></a>
+                <h1>Веб страница для курса Web UI</h1>
+            </div>
+        </header>
+<div class="content">
+                <nav class="menu">
+                    <a href="#linkedlist">Список гиперссылок</a>
+                    <a href="#table">Таблица</a>
+                    <a href="#form">Форма</a>
+                </nav>
+<a id="linkedlist"></a>
+<ol class="linkedlist">
+            <li><a href="http://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта КубГУ</a></li>
+            <li><a href="https://www.kubsu.ru/">абсолютная гиперссылка на главную страницу сайта КубГУ в https;</a></li>
+                      
+            <li><a href="/">сокращенная ссылка на главную страницу</a></li>
+            <li><a href="111.jpg">сокращенная ссылка на внутреннюю страницу</a></li>
+            <li><a href="#footer">ссылка на фрагмент текущей страницы(конец страницы)</a></li>
+            <li><nav>
+                                <a href="index.html" title="Главная">Главная</a><br>
+                                <a href="#footer" title="Подвал сайта">Подвал сайта</a><br>
+                                <a href="#image" title="Картинка">Земля</a><br>
+                                <a href="#map" title="Карта">Карта</a><br>
+                            </nav>
+                        </li>
+            <li>Тег <a href="#footer">&lt;footer&gt;</a> задаёт «подвал» сайта или раздела, в нём может располагаться имя автора, дата документа, контактная и правовая информация.</li> <!-- контекстная ссылка в тексте -->
+            <li><a href="image.jpg" id="image"><img src="111.jpg" height="840" width="1120" alt="Земля"></a></li> 
+            <li><map name="map0">
+                    <area shape="rect" coords="22,31,345,170" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" alt="Прямоугольник">
+                    <area shape="circle" coords="566,115,66" href="https://ru.wikipedia.org/wiki/%D0%9A%D1%80%D1%83%D0%B3" alt="Круг">
+                    <area shape="poly" coords="55,225,586,335,55,335" href="https://ru.wikipedia.org/wiki/%D0%9F%D1%80%D1%8F%D0%BC%D0%BE%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9_%D1%82%D1%80%D0%B5%D1%83%D0%B3%D0%BE%D0%BB%D1%8C%D0%BD%D0%B8%D0%BA" alt="Прямоугольный треугольник">
+                </map>
+            <li><a href=" https://www.dota2.com?game=thebest&community=cool&characters=top">ссылка с тремя параметрами в URL</a></li>
+            <li><a href="demo.html">относительная ссылка на страницу в текущем каталоге</a></li>
+            <li><a href="about/index.html">относительная ссылка на страницу в каталоге about</a></li>
+            <li><a href="../index.html">относительная ссылка на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../index.html">относительная ссылка на страницу в каталоге двумя уровнями вышe</a></li>
+            <li>Для получения дополнительной информации, пожалуйста, посетите наш <a href="https://www.kubsu.ru">веб-сайт</a>.</li>
+            <li><a href="https://kartinki.pics/uploads/posts/2023-09/thumbs/1693885546_kartinki-pics-p-volt-avtomobil-pinterest-1.jpg">ссылка на фрагмент страницы некоторого сайта</a></li>
+            <a id="map"><img src="2.png" usemap="#map0" alt="Map"></a>
+            <li><a href="">ссылка с пустым href=""</a></li>
+            <li><a>ссылка без href</a></li>
+            <li><a href="https://www.kubsu.ru" rel=nofollow>ссылка, по которой запрещен переход поисковикам</a></li>
+            <li><a href="https://www.kubsu.ru"><!--noindex-->ссылка запрещенная для индексации поисковиками<!--/noindex--></a></li>
+            <li><a href="ftp://user:123456@example.ru/examples/main.txt">ссылка на файл на сервере FTP с авторизацией</a></li>
+</ol>
+<a id="table"></a>
+                <table class="tabletask">
+                    <caption>Популярность языков программирования</caption>
+                    <tr>
+                        <th>Позиция сентябрь 2020</th>
+                        <th>Позиция сентябрь 2019</th>
+                        <th>Название</th>
+                        <th>Популярность в %</th>
+                        <th>Изменение популярности в %</th>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>2</td>
+                        <td>C</td>
+                        <td>15.95%</td>
+                        <td>+0.74%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>1</td>
+                        <td>Java</td>
+                        <td>13.48%</td>
+                        <td>-3.18%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>3</td>
+                        <td>Python</td>
+                        <td>10.47%</td>
+                        <td>+0.59%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">4</td>
+                        <td>C++</td>
+                        <td>7.11%</td>
+                        <td rowspan="2">~+1.33%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">5</td>
+                        <td>C#</td>
+                        <td>4.58%</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>-</td>
+                        <td>Pascal</td>
+                        <td>0%</td>
+                        <td>-</td>
+                    </tr>
+                </table>    
+            <a id="form"></a>      
+             <form>
+            <label>
+            Имя Фамилия Отчество:<br>
+            <input name="field-name-1">
+            </label><br>
+            <label>
+                Текстовое поле email:<br>
+                <input name="field-email" type="email">
+            </label><br>
+            Текстовое поле tel:<br>
+                <input name="field-tel" type="tel">
+            </label><br>
+                <label>
+                Текстовое поле даты:<br>
+                <input name="field-date" value="2004-03-18" type="date">
+            </label><br>
+            Пол:<br>
+            <label><input type="radio" checked="checked" name="radio-group-1"/>Мужской</label>
+            <label><input type="radio" name="radio-group-1"/>Женский</label><br>
+            Любимый язык программирования:<br>
+            <label><input type="radio" checked="checked" name="radio-group-2"/>Pascal</label>
+            <label><input type="radio" name="radio-group-2"/>C</label>
+            <label><input type="radio" name="radio-group-2"/>C++</label>
+            <label><input type="radio" name="radio-group-2"/>JavaScript</label>
+            <label><input type="radio" name="radio-group-2"/>PHP</label>
+            <label><input type="radio" name="radio-group-2"/>Python</label>
+            <label><input type="radio" name="radio-group-2"/>Java</label>
+            <label><input type="radio" name="radio-group-2"/>Haskel</label>
+            <label><input type="radio" name="radio-group-2"/>Clojure</label>
+            <label><input type="radio" name="radio-group-2"/>Prolog</label>
+            <label><input type="radio" name="radio-group-2"/>Scala</label><br>
+            Биография:<br>
+                <textarea name="field-name-2"></textarea>
+            </label><br>
+            Чекбокс:<br>
+            <label><input type="checkbox" name="check-1">C контрактом ознакомлен</label><br>
+            <input type="submit" value="Отправить"><br>
+            Сохранить:<br>
+            <input type="submit" value="Сохранить">
+        </form>
+</div>
+        </div>
+            <footer>
+            <a id="footer"></a>
+            <p>Приветствует Владислав,и footer стоит здесь</p>
+        </footer>     
+    </body>
+</html>
